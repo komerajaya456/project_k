@@ -1,10 +1,10 @@
-const mongoose=require("mongoose")
+import mongoose from "mongoose";
 const collectionname='ecom_users'
 
 
 
 
-const mySchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
     {
       name: {
         type: String,
@@ -41,6 +41,4 @@ const mySchema = new mongoose.Schema(
 
 
 
-const mymodel=mongoose.model(`${collectionname}`,mySchema)
-
-module.exports=mymodel
+export default mongoose.model(`${collectionname}`, userSchema);

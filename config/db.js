@@ -1,4 +1,4 @@
-const mongoose=require("mongoose")
+import mongoose from "mongoose"
 const uri = "mongodb+srv://komerajaya7259:eihlGz2XfQOM3FoJ@secondcluster.vzmnsfg.mongodb.net/mohit?retryWrites=true&w=majority"
 
 async function connectDB(){
@@ -11,4 +11,4 @@ async function connectDB(){
     }
 }
 
-module.exports= connectDB;
+export default connectDB;
